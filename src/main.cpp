@@ -3,7 +3,7 @@
 #include "Kniwwelino.h"
 
 void setup() {
-    Kniwwelino.begin(true, true, false);
+    Kniwwelino.begin("name", true, true, false);
 }
 
 void loop() {
