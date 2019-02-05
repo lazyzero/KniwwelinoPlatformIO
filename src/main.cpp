@@ -1,11 +1,17 @@
-#include <Arduino.h>
+#include <Kniwwelino.h>
+#include <SPI.h>
 
-#include "Kniwwelino.h"
+#define USE_SERIAL Serial
 
 void setup() {
-    Kniwwelino.begin("name", true, true, false);
+  //Initialize the Kniwwelino Board
+  Kniwwelino.begin("latest", true, true, false); // Wifi=true, Fastboot=true, MQTT Logging=false
+
 }
 
 void loop() {
-    Kniwwelino.loop();
+
+
+  Kniwwelino.loop(); // do background stuff...
+
 }
